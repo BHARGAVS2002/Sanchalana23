@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/assets/icon.png" type="image/x-icon" />
+    <meta name="description" content="Sanchalana Fest 2023 is here! Come with us and experience our journey to the cosmos" >
+    <meta property="og:title" content="Sanchalana'23" />
+    <meta property="og:description" content="Sanchalana Fest 2023 is here! Come with us and experience our journey to the cosmos" />
+   
+    <meta property="og:site_name" content="Sanchalana Fest" />
+    <style type="text/css">
+    .loader-bg {position: fixed;z-index: 99999;background: rgb(19, 18, 18);height: 100%;width: 100%;opacity: 1;overflow: hidden;}
+    .loader{position: absolute;top: 45vh;left: 45vw;}
+    .loader img {height: 20vh;animation: loader 0.7s linear infinite alternate;}
+    @keyframes loader {
+      from {
+        transform: translateY(0%);
+      }
+      to {
+        transform: translateY(-25%);
+      }
+    }
+  </style>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></noscript>
+
+    <link rel="preload" href="https://unpkg.com/aos@next/dist/aos.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"></noscript>
+    
+    <link rel="preload" href="./landing_styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="./landing_styles.css"></noscript>
+
+    <!-- <link rel="stylesheet" href="./assets/pointer/pointer.css"> -->
+    
+    <title>Sanchalana-2023</title>
+</head>
+<body>
+    <div class="loader-bg">
+      <div class="loader"><img src="./assets/preloader.png" alt="Preloader"></div>
+    </div>
+    <div class="well" id="well">
+      <a href="#top" title="Back to top"><button id="back-to-top-btn"><i class="fas fa-angle-double-up"></i></button></a>
+        <div class="banner panel" id="top">
+            
+            <nav id="nav" data-aos="menu-area" data-aos-anchor-placement="bottom-top" >
+              <a title="About" href="#about_anchor">About</a>
+              <a title="Timeline" href="#timeline_anchor">Timeline</a>
+              <a title="Pronites" href="#pronites_anchor">Guests</a>
+              <a title="Sponsors" href="#sponsors_anchor">Sponsors</a>
+              <a title="Contact" href="#contact_anchor">Contact</a>
+            </nav>
+        
+           
+            <video src="./assets/background.mp4" loop muted autoplay></video>
+            <!--<audio> <source src="./assets/back.mp3"></audio>
+            <bgsound src="./assets/back.mp3"></bgsound>--> 
+            
+            <div class="overlay"></div><br>
+            <div class="heading">
+              
+                <h2>Sanchalana-23</h2>
+                <h2>Sanchalana-23</h2>
+                
+                <pa><br><br>23rd & 24th June 2023</pa>
+              
+           
+                <div class="register-button"><div class="left" href="#about_anchor"></div>
+                <a title="Register" href="#about_anchor">AURORA</a>
+                <div class="right" href="#about_anchor"></div></div>
+               <!--<iframe src="./assets/background.mp4?autoplay=1&mute=1" frameborder="0"></iframe>-->
+                <!-- //countdown timer -->
+                <div id="countdown">
+                  <ul>
+                    <br>  <li><div id="days"></div>days</li>
+                    <li><div id="hours"></div>Hours</li>
+                    <li><div id="minutes"></div>Minutes</li>
+                    <li><div id="seconds"></div>Seconds</li>
+                  </ul>
+                  
+                </div>
+            </div>  
+        </div>
+     <div class="content">
+          <div class="about panel" id="about_anchor">
+            <!-- sidebar -->
+            <div class="nav-checkbox">
+                <input type="checkbox" id="check" />
+                <label for="check">
+                <i class="fas fa-bars" id="btn"></i>
+                <i class="fas fa-times" id="cancel"></i>
+                </label> 
+                <div class="sidebar">
+                    <header>Explore</header>
+                    <a title="Homepage" href="#top" class="active">
+                        <i class="fas fa-rocket"></i>
+                        <span>Homepage</span>
+                    </a>
+                     
+                    <a title="Events" href="#timeline_anchor">
+                      <i class="fas fa-tag"></i>
+                      <span>Events</span>
+                  </a>
+                    <a title="Co-ordinators" href="./conveners/index.html">
+                        <i class="fas fa-user"></i>
+                        <span>Conveners</span>
+                    </a>
+                    <a title="FAQ" href="./faqpage/index.html">
+
+                        <i class="fas fa-question"></i>
+                        <span>FAQ's</span>
+                    </a>
+                </div>
+              </div>
+
+            <img id="astronaut" alt="astronaut" src= "./assets/astronaut.webp">
+
+            <img id="planet" alt="planet"  src="./assets/moon.webp">
+
+            <div class="about-box">
+                <h1></h1>
+               <p> <img src="./assets/main.png">
+               </p>
+                
+                <!---<p class="about-text" > height="200px" width="60vw"-->
+                  <!--We are excitedly welcome you to Sanchalana - the wonderful, immense, most fun college fest of SVIT. 
+                  Join us in the celebration of youth and culture. 
+                  A wide range of events spread over one ecstatic week will make this an event to reminisce. 
+                  Do not miss this opportunity! We hope to see you there!-->
+            </div>  
+          </div>
+
+          <!-- timeline -->
+          <div class="panel timeline" id="timeline_anchor">
+            <div class="timeline-header"><h1><span data-aos="fade-right">TIME</span><span data-aos="fade-left">LINE</span></h1></div>
+            <div class="timeline-header-mob"><h1>TIMELINE</h1></div>
+            <div class="timeline-container">
+              
+
+        <section class="card" data-aos="fade-right">
+                    <div class="book">
+                        <div class="first">
+                          <div class="front day1-card">
+                            <h1>FASHION<br><br>EVENTS</h1>
+                          </div>
+                          <div class="back">
+                            <h1>Fashion<br>Events</h1>
+                            <p>We kick off the event with an exciting Fashion Fiesta, after which we crown our Mr and Ms Elegant.</p> 
+                          </div>
+                        </div>
+                        <div class="second">
+                          <div><ul><h2>&nbsp;Fashion Events</h2>
+                            <li><a href="./EventPages/mrandmselegant.html" title="Mr and Mrs Elegant"><div>Mr and Ms Elegant</div><div>23/6&nbsp;-4:30PM</div></a></li> 
+                          <li><a href="./EventPages/fashionfiesta.html" title="Fashion Show"><div>Fashion Fiesta</div><div>23/6&nbsp;-7:40PM</div></a></li>
+   
+                          </ul> </div>
+                        </div>
+                      </div>
+                    <div>
+                   </div>
+                </section>
+                <section class="card-mob">
+                 
+                  <div class="second">
+                    <div>
+                      <ul><h2>&nbsp;Fashion Events</h2>
+                        <li><a href="./EventPages/mrandmselegant.html" title="Mr and Mrs Elegant"><div>Mr and Ms Elegant</div><div>23/6&nbsp;-4:30PM</div></a></li> 
+                        <li><a href="./EventPages/fashionfiesta.html" title="Fashion Show"><div>Fashion Fiesta</div><div>23/6&nbsp;-7:40PM</div></a></li>
+                          </ul> </div>
+                  </div>
+              </section>
+                
+          <section class="card" data-aos="fade-left">
+                    <div class="book">
+                        <div class="first">
+                          <div class="front day2-card">
+                            <h1>MUSIC<br><br>EVENTS</h1>
+                          </div>
+                          <div class="back">
+                            <h1>Music<br>Events</h1>
+                            <p>Impress the crowd with your voice and skills, from vaadya lahari to voice to raptures.</p>
+                            
+                          </div>
+                        </div>
+                        <div class="second">
+                            <div><ul>
+                              <h2>&nbsp;Music Events</h2>
+    
+                                <li><a href="./EventPages/raptures.html" title="Raptures"><div>Raptures</div><div>20/6&nbsp;-1:30PM</div></a></li>
+                                <li><a href="./EventPages/chitramanjari.html" title="Chitramanjari"><div>Chitramanjari</div><div>23/6&nbsp;-3:30PM</div></a></li>
+                                <li><a href="./EventPages/thevoice.html" title="The Voice"><div>The Voice</div><div>23/6&nbsp;-6:00PM</div></a></li>
+                                <li> <a href="./EventPages/vaadyalahari.html" title="Vaadya Lahari"><div>Vaadya Lahari</div><div>24/6&nbsp;-4:00PM</div></a> </li>
+                                </ul> </div>
+                        </div>
+                        <div>
+                          
+                        </div>
+                     </div>
+                     
+
+                </section>
+                <section class="card-mob">
+                 
+                  <div class="second">
+                    <div><ul><h2>&nbsp;Music Events</h2>
+                      <li><a href="./EventPages/raptures.html" title="Raptures"><div>Raptures</div><div>20/6&nbsp;-1:30PM</div></a></li>
+                      <li><a href="./EventPages/chitramanjari.html" title="Chitramanjari"><div>Chitramanjari</div><div>23/6&nbsp;-3:30PM</div></a></li>
+                      <li><a href="./EventPages/thevoice.html" title="The Voice"><div>The Voice</div><div>23/6&nbsp;-6:00PM</div></a></li>
+                      <li> <a href="./EventPages/vaadyalahari.html" title="Vaadya Lahari"><div>Vaadya Lahari</div><div>24/6&nbsp;-4:00PM</div></a> </li>
+                                </ul> </div>
+                </div>
+                </section>
+               
+                <section class="card" data-aos="fade-right">
+                  <div class="book">
+                      <div class="first">
+                        <div class="front day6-card">
+                          <h1>ARTS N <br><br>FINE ARTS</h1>
+                        </div>
+                        <div class="back">
+                          <h1>Arts & Fine Arts</h1>
+                          <p>Art is a powerfull expression of creativity, fine arts is to showcase the talents of artist. </p>
+                         
+                        </div>
+                      </div>
+                      <div class="second">
+                          <div><ul><h2>&nbsp;Arts & Fine Arts</h2>
+
+                              <li><a href="./EventPages/mehandi.html" title="Mehandi"><div>Mehandi</div><div>20/6&nbsp;-1:30PM</div></a></li>
+                              <li><a href="./EventPages/facepainting.html" title="Face Painting"><div>Face Painting</div><div>21/6&nbsp;-2:30PM</div></a></li>
+                              <li><a href="./EventPages/rangoli.html" title="Rangoli"><div>Rangoli</div><div>22/6&nbsp;-2:00PM</div></a></li>
+                              <li> <a href="./EventPages/vegpicasso.html" title="Veg Picasso"><div>Veg Picasso</div><div>24/6&nbsp;-10:30AM</div></a> </li>
+            
+                            </ul> </div>
+                              
+                      </div>
+                    </div>
+                  
+                  <div>
+                     
+                  </div>
+  
+              </section>
+              <section class="card-mob">
+               
+                <div class="second">
+                  <div><ul><h2>&nbsp;Arts & Fine Arts</h2>
+                    <li><a href="./EventPages/mehandi.html" title="Mehandi"><div>Mehandi</div><div>20/6&nbsp;-1:30PM</div></a></li>
+                    <li><a href="./EventPages/facepainting.html" title="Face Painting"><div>Face Painting</div><div>21/6&nbsp;-2:30PM</div></a></li>
+                    <li><a href="./EventPages/rangoli.html" title="Rangoli"><div>Rangoli</div><div>22/6&nbsp;-2:00PM</div></a></li>
+                    <li> <a href="./EventPages/vegpicasso.html" title="Veg Picasso"><div>Veg Picasso</div><div>24/6&nbsp;-10:30AM</div></a> </li>
+                      </ul> </div>
+                      
+              </div>
+              </section>
+                <section class="card" data-aos="fade-right">
+                    <div class="book1">
+                        <div class="first1">
+                          <div class="front1 day3-card">
+                            <h1>DANCE<br><br>EVENTS</h1>
+                          </div>
+                          <div class="back1">
+                            <h1>Dance<br>Events</h1>
+                            <p>Impress the crowd with your moves on the dance floor, from mood n moves to duo dance.</p>
+                            
+                          </div>
+                        </div>
+                        <div class="second1">
+                            <div>
+                              <ul><h2>&nbsp;Dance Events</h2><li>
+                                <a href="./EventPages/moodnmoves.html" title="Mood N Moves"><div>Mood N Moves</div><div>23/6&nbsp;-3:00PM</div></a> </li>
+                                <li><a href="./EventPages/dare2dance.html" title="Dare 2 Dance"><div>Dare 2 Dance</div><div>24/6&nbsp;-2:00PM</div></a></li>
+                                <li><a href="./EventPages/duodance.html" title="Duo Dance"><div>Duo Dance</div><div>24/6&nbsp;-3:30PM</div></a></li>
+                                <li><a href="./EventPages/levelup.html" title="Level Up"><div>Level Up</div><div>24/6&nbsp;-5:00PM</div></a></li>
+                                <li><a href="./EventPages/letsnacho.html" title="Lets Nacho"><div>Lets Nacho</div><div>24/6&nbsp;-6:00PM</div></a></li>
+                                </ul> </div>
+                        </div>
+                      </div>
+                    <div>
+                        
+                    </div>
+
+                </section>
+                <section class="card-mob">
+                 
+                  <div class="second1">
+                    <div>
+                      <ul><h2>&nbsp;Dance Events</h2><li>
+                        <a href="./EventPages/moodnmoves.html" title="Mood N Moves"><div>Mood N Moves</div><div>23/6&nbsp;-3:00PM</div></a> </li>
+                        <li><a href="./EventPages/dare2dance.html" title="Dare 2 Dance"><div>Dare 2 Dance</div><div>24/6&nbsp;-2:00PM</div></a></li>
+                        <li><a href="./EventPages/duodance.html" title="Duo Dance"><div>Duo Dance</div><div>24/6&nbsp;-3:30PM</div></a></li>
+                        <li><a href="./EventPages/levelup.html" title="Level Up"><div>Level Up</div><div>24/6&nbsp;-5:00PM</div></a></li>
+                        <li><a href="./EventPages/letsnacho.html" title="Lets Nacho"><div>Lets Nacho</div><div>24/6&nbsp;-6:00PM</div></a></li>
+                        </ul> </div>
+                </div>
+                </section>
+               
+
+                <section class="card" data-aos="fade-left">
+                    <div class="book">
+                        <div class="first">
+                          <div class="front day4-card">
+                            <h1>THEATRE<br><br>EVENTS</h1>
+                          </div>
+                          <div class="back">
+                            <h1>Theatre<br>Events</h1>
+                            <p>Vibrant onscreen performances with their magic of story telling.</p>
+                           
+                          </div>
+                        </div>
+                        <div class="second">
+                            <div><ul><h2>&nbsp;Theatre Events</h2>
+                              <li><a href="./EventPages/cosplay.html" title="Cosplay"><div>Cosplay</div><div>19/6&nbsp;-3:00PM</div></a></li>
+                             <li> <a href="./EventPages/navarasa.html" title="Navarasa"><div>Navarasa</div><div>19/6&nbsp;-4:00PM</div></a> </li>                                
+                                <li><a href="./EventPages/moviemania.html" title="Movie Mania"><div>Movie Mania</div><div>22/6&nbsp;-11:30AM</div></a></li>
+                              </ul> </div>
+                               
+                        </div>
+                      </div>
+                    
+                    <div>
+                       
+                    </div>
+
+                </section>
+                <section class="card-mob">
+                  <div class="second">
+                    <div><ul><h2>&nbsp;Theatre Events</h2>                  
+                                  <li><a href="./EventPages/cosplay.html" title="Cosplay"><div>Cosplay</div><div>19/6&nbsp;-3:00PM</div></a></li>
+                                  <li><a href="./EventPages/navarasa.html" title="Navarasa"><div>Navarasa</div><div>19/6&nbsp;-4:00PM</div></a> </li>                                
+                        <li><a href="./EventPages/moviemania.html" title="Movie Mania"><div>Movie Mania</div><div>22/6&nbsp;-11:30AM</div></a></li>
+                      </ul> </div>
+                </div>
+                </section>
+
+                <section class="card" data-aos="fade-left">
+                  <div class="book">
+                      <div class="first">
+                        <div class="front day7-card">
+                          <h1>LITERARY<br><br>EVENTS</h1>
+                        </div>
+                        <div class="back">
+                          <h1>Literary<br>Events</h1>
+                          <p>Fun with preparing, presenting & debating with our thoughts.</p>
+                          
+                        </div>
+                      </div>
+                      <div class="second">
+                          <div><ul><h2>&nbsp;Literary Events</h2>
+                       <li><a href="./EventPages/defenceandoffence.html" title="Open Mic"><div>Defence and Offence</div><div>19/6&nbsp;-4:00PM</div></a> </li>
+                   <li><a href="./EventPages/aircrash.html" title="Valorant Qualifiers"><div>Air Crash</div><div>20/6&nbsp;-4:00PM</div></a></li>
+                  </ul> </div>
+                              
+                          </div></div>
+                          <div>
+                       
+                          </div>
+                  </section>
+                  <section class="card-mob">
+                   
+                    <div class="second">
+                      <div><ul><h2>&nbsp;Literary Events</h2>
+                        <li><a href="./EventPages/defenceandoffence.html" title="Open Mic"><div>Defence and Offence</div><div>19/6&nbsp;-4:00PM</div></a> </li>
+                    <li><a href="./EventPages/aircrash.html" title="Valorant Qualifiers"><div>Air Crash</div><div>20/6&nbsp;-4:00PM</div></a></li>
+                    </ul> </div>
+                  </div>
+                  </section>
+                
+                <section class="card" data-aos="fade-right">
+                  <div class="book2">
+                      <div class="first2">
+                        <div class="front2 day5-card">
+                          <h1>FLAGSHIP<br><br>EVENTS-1</h1>
+                        </div>
+                        <div class="back2">
+                          <h1>Flagship<br>Events-1</h1>
+                          <p>Flagship events refer to high-profile, prestigious gatherings or occasions that represent the pinnacle of an organization's activities, showcasing innovation, excellence, and attracting significant attention and participation.</p>
+                          
+                        </div>
+                      </div>
+                      <div class="second2">
+                          <div><ul><h2>&nbsp;Flagship Events-1</h2>
+                            <li><a href="./EventPages/housie.html" title="Housie"><div>Housie</div><div>20/6&nbsp;-4:00PM</div></a></li>
+                            <li><a href="./EventPages/twistnturn.html" title="Twist N Turn"><div>Twist N Turn</div><div>21/6&nbsp;-1:30PM</div></a> </li>
+                            <li><a href="./EventPages/pictionary.html" title="Pictionary"><div>Pictionary</div><div>21/6&nbsp;-2:30PM</div></a> </li>
+                            <li><a href="./EventPages/mobilephotography.html" title="Mobile Photography"><div>Mobile Photography</div><div>23/6&nbsp;-10:00AM</div></a></li>
+                            <li><a href="./EventPages/fandomquiz.html" title="Fandom Quiz"><div>Fandom Quiz</div><div>23/6&nbsp;-11:00AM</div></a></li>
+                              <li><a href="./EventPages/mysterybox.html" title="Mystery Box"><div>Mystery Box</div><div>23/6&nbsp;-1:30PM</div></a></li>
+                              <li><a href="./EventPages/relayxox.html" title="Relay XOX"><div>Relay XOX</div><div>24/6&nbsp;-10:30AM</div></a></li>
+                              <li><a href="./EventPages/slowdrag.html" title="Slow Drag"><div>Slow Drag</div><div>24/6&nbsp;-11:00AM</div></a></li>
+                            </ul> </div>
+                              
+                          </div>
+                        </div>
+                      <div>
+                          
+                      </div>
+    
+                  </section>
+                  <section class="card-mob">
+                   
+                    <div class="second2">
+                      <div><ul><h2>&nbsp;Flagship Events-1</h2>
+                        <li><a href="./EventPages/housie.html" title="Housie"><div>Housie</div><div>20/6&nbsp;-4:00PM</div></a></li>
+                        <li><a href="./EventPages/twistnturn.html" title="Twist N Turn"><div>Twist N Turn</div><div>21/6&nbsp;-1:30PM</div></a> </li>
+                        <li><a href="./EventPages/pictionary.html" title="Pictionary"><div>Pictionary</div><div>21/6&nbsp;-2:30PM</div></a> </li>
+                        <li><a href="./EventPages/mobilephotography.html" title="Mobile Photography"><div>Mobile Photography</div><div>23/6&nbsp;-10:00AM</div></a></li>
+                        <li><a href="./EventPages/fandomquiz.html" title="Fandom Quiz"><div>Fandom Quiz</div><div>23/6&nbsp;-11:00AM</div></a></li>
+                          <li><a href="./EventPages/mysterybox.html" title="Mystery Box"><div>Mystery Box</div><div>23/6&nbsp;-1:30PM</div></a></li>
+                          <li><a href="./EventPages/relayxox.html" title="Relay XOX"><div>Relay XOX</div><div>24/6&nbsp;-10:30AM</div></a></li>
+                          <li><a href="./EventPages/slowdrag.html" title="Slow Drag"><div>Slow Drag</div><div>24/6&nbsp;-11:00AM</div></a></li>
+                          
+                        </ul> </div>
+                  </div>
+                  </section>
+
+                  <section class="card" data-aos="fade-left">
+                    <div class="book2">
+                        <div class="first2">
+                          <div class="front2 day5-card">
+                            <h1>FLAGSHIP<br><br>EVENTS-2</h1>
+                          </div>
+                          <div class="back2">
+                            <h1>Flagship<br>Events-2</h1>
+                            <p>Flagship events refer to high-profile, prestigious gatherings or occasions that represent the pinnacle of an organization's activities, showcasing innovation, excellence, and attracting significant attention and participation.</p>
+                            
+                          </div>
+                        </div>
+                        <div class="second2">
+                            <div><ul><h2>Flagship Events-2</h2>
+                              <li><a href="./EventPages/grabit.html" title="Grab It"><div>Grab It</div><div>19/6&nbsp;-1:30PM</div></a> </li>
+                              <li><a href="./EventPages/iplauction.html" title="IPL Auction"><div>IPL Auction</div><div>19/6&nbsp;-3:00PM</div></a> </li>
+                              <li><a href="./EventPages/firelesscooking.html" title="Fireless Cooking"><div>Fireless Cooking</div><div>20/6&nbsp;-2:30PM</div></a></li>
+                              <li><a href="./EventPages/huntthetrove.html" title="Hunt The Trove"><div>Hunt The Trove</div><div>21/6&nbsp;-3:00PM</div></a></li>
+                              <li><a href="./EventPages/adreel.html" title="AD Reel"><div>AD Reel</div><div>23/6&nbsp;-10:00AM</div></a></li>
+                              <li><a href="./EventPages/funfairgames.html" title="Fun Fair Games"><div>Fun Fair Games</div><div>23/6&nbsp;-10:00AM</div></a></li>
+                              <li><a href="./EventPages/minute2winit.html" title="Minute 2 Win It"><div>Minute 2 Win It</div><div>23/6&nbsp;-12:00PM</div></a></li>
+                            <li><a href="./EventPages/ludoking.html" title="Ludo King"><div>Ludo King</div><div>24/6&nbsp;-1:00PM</div></a></li>
+                              </ul> </div>
+                                
+                            </div>
+                          </div>
+                        <div>
+                            
+                        </div>
+      
+                    </section>
+                    <section class="card-mob">
+                     
+                      <div class="second2">
+                        <div><ul><h2>Flagship Events-2</h2>
+                          <li><a href="./EventPages/grabit.html" title="Grab It"><div>Grab It</div><div>19/6&nbsp;-1:30PM</div></a> </li>
+                          <li><a href="./EventPages/iplauction.html" title="IPL Auction"><div>IPL Auction</div><div>19/6&nbsp;-3:00PM</div></a> </li>
+                          <li><a href="./EventPages/firelesscooking.html" title="Fireless Cooking"><div>Fireless Cooking</div><div>20/6&nbsp;-2:30PM</div></a></li>
+                          <li><a href="./EventPages/huntthetrove.html" title="Hunt The Trove"><div>Hunt The Trove</div><div>21/6&nbsp;-3:00PM</div></a></li>
+                          <li><a href="./EventPages/adreel.html" title="AD Reel"><div>AD Reel</div><div>23/6&nbsp;-10:00AM</div></a></li>
+                          <li><a href="./EventPages/funfairgames.html" title="Fun Fair Games"><div>Fun Fair Games</div><div>23/6&nbsp;-10:00AM</div></a></li>
+                          <li><a href="./EventPages/minute2winit.html" title="Minute 2 Win It"><div>Minute 2 Win It</div><div>23/6&nbsp;-12:00PM</div></a></li>
+                        <li><a href="./EventPages/ludoking.html" title="Ludo King"><div>Ludo King</div><div>24/6&nbsp;-1:00PM</div></a></li>
+                              </ul> </div>
+                    </div>
+                    </section>
+                              
+                <div class="timeline-line"></div>
+            </div>
+        </div>
+        
+        <div id="particles-js"></div>
+      </div>
+      
+      <!-- pronites -->
+      <div class="pronites" id="pronites_anchor">
+        <div class="pronites-header"><h1><span data-aos="fade-down">GUE</span><span data-aos="fade-up">STS</span></h1></div>
+        <div class="pronites-header-mob"><h1>GUESTS</h1></div>
+        <div class="pronite-box">
+          
+          <div class="pro-content">
+            <img class="slide" alt="guest1" src="./assets/stay.png"> 
+           <!-- <button id="pronite_rgn_1"><a class = "pro1">Register</a></button>-->
+          </div>
+          
+          <div class="pro-content">
+            <img class="slide" alt="guest2" src="./assets/stay.png"> 
+            <!-- <button id="pronite_rgn_2"><a class = "pro2">Register</a></button>-->
+          </div>
+
+          <div class="pro-content">
+            <img class="slide" alt="guest3" src="./assets/stay.png"> 
+           <!--  <button id="pronite_rgn_3"><a class = "pro3">Register</a></button>-->
+          </div>
+
+          <div class="pro-content">
+            <img class="slide" alt="DJ" src="./assets/dj.webp"> 
+           <!--  <button id="pronite_rgn_4"><a class = "pro4">Register</a></button>-->
+          </div>
+
+          <a id="previous" title="prev" class="arrow">&#10094</a>
+          <a id="next" title="next" class="arrow">&#10095</a>
+          <div id="text-bar">
+            <div id="pro-name">
+               <!--<h1>ODESZA</h1>
+              <p>30th June 2023</p>
+              <p>10:00PM-12:00AM</p> -->
+            </div>
+          </div>
+        </div>
+          
+        
+      </div>
+
+      <!--conveners-->
+      <div class="conveners-banner"><h1><a href="./conveners/index.html">CONVENERS</a></h1>
+        <div class="blinker__container"><a href="./conveners/index.html">
+        <i class="blinker fa fa-arrow-right fa-4x"></i>
+        <i class="blinker fa fa-arrow-right fa-4x"></i>
+        <i class="blinker fa fa-arrow-right fa-4x"></i>
+        <i class="blinker fa fa-arrow-right fa-4x"></i>
+        <i class="blinker fa fa-arrow-right fa-4x"></i>
+      </a>
+      </div></div>
+
+      <!--sponsors-->
+
+      <div class="sponsor-body" id="sponsors_anchor">
+        <div class="sponsor-header"><h1><span data-aos="fade-right">SPON</span><span data-aos="fade-left">SORS</span></h1></div>
+            <div class="sponsor-header-mob"><h1>SPONSORS</h1></div>
+
+    <figure class="icon-cards">
+      <div class="icon-cards__content">
+        <div
+          class="icon-cards__item"
+        >
+          <span class="h1"
+            ><img
+              src="https://tse2.mm.bing.net/th?id=OIP.3pMjriE9O7sIBtea0C3VQgHaHa&pid=Api&P=0&h=180" alt="updated soon"
+          /></span>
+        </div>
+        <div
+          class="icon-cards__item"
+        >
+          <span class="h1"
+            ><img
+              src="https://tse3.mm.bing.net/th?id=OIP.5SV0UHFB3xr96dp5u_3lnQHaHa&pid=Api&P=0&h=180" alt="coming soon"
+          /></span>
+        </div>
+        <div
+          class="icon-cards__item"
+        >
+          <span class="h1"
+            ><img
+              src="https://tse2.mm.bing.net/th?id=OIP.3pMjriE9O7sIBtea0C3VQgHaHa&pid=Api&P=0&h=180" alt="updated soon"
+          /></span>
+        </div>
+      </div>
+    </figure>
+    </div>
+    
+
+      <!-- Footer -->
+      <footer>
+        <div class="footer-content" id="contact_anchor">
+            <h3>Sanchalana-2K23</h3>
+            <ul class="links">
+              <li><a href="#timeline_anchor">Register</a></li>
+              <li><a href="./conveners/index.html">Conveners</a></li>
+              <li><a href="./faqpage/index.html">FAQ</i></a></li>
+          </ul>
+            <p>Contact us at : 9242958139 / 7259956267</p>
+            <p>Location: SVIT, Rajanukunte, Bengaluru</p>
+            <ul class="socials">
+                <li><a href="https://www.facebook.com/SaiVidyaInstituteOfTechnology?mibextid=ZbWKwL"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="https://instagram.com/sangama_svit?igshid=MzRlODBiNWFlZA=="><i class="fab fa-instagram"></i></a></li>
+                <li><a href="https://youtube.com/@sangamasaividyaculturalclu6690"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="mailto:sanchalana@gmail.com"><i class="fab fa-google"></i></a></li>
+            </ul>
+            <p><a href="#">Designed by ISE Website Team</a></p>
+        </div>
+        
+    </footer>
+    </div>
+
+    <!-- <div class="cursor"></div>
+    <div class="cursor-border"></div> -->
+    
+    <script src="./script.js"></script>
+    
+    <script src="./particles.js"></script>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.all.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset:150,
+            duration:1000
+        });
+    </script>
+    <!-- <script src="./assets/pointer/pointer.js"></script> -->
+    
+</body>
+</html>
+
+
